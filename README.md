@@ -6,7 +6,7 @@
 
 ## 1. 숫자야구게임 - 단위 테스트 ⚾️
 
-| Step               | Project                  | 개선 사항   |
-|--------------------|--------------------------|---------|
-| <center>1</center> | <center>문자열 계산기</center> | [TIL](https://github.com/headF1rst/NextStep-PlayGround/blob/main/java-baseball-playground/src/main/java/step2/README.md) |
+| Step               | Project                  | Repository                   | 개선 사항                                                                                                                    |
+|--------------------|--------------------------|------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| <center>1</center> | <center>문자열 계산기</center> | [java-baseball-playground](https://github.com/headF1rst/NextStep-PlayGround/tree/main/java-baseball-playground/src) | [TIL](https://github.com/headF1rst/NextStep-PlayGround/tree/main/java-baseball-playground/src/main/java/step2) |
 

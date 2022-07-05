@@ -1,23 +1,28 @@
 package step3.view;
 
+import step3.Counter;
+
 public class ResultView {
 
-    private int strike;
-    private int ball;
+    private Counter counter;
+
+    public ResultView(Counter counter) {
+        this.counter = counter;
+    }
 
     public void printCount() {
-        if (strike != 0 && ball != 0) {
-            System.out.println(ball + "볼 " + strike + "스트라이크");
+        if (counter.strikeAndBallCounted()) {
+            System.out.println(counter.getBall() + "볼 " + counter.getStrike() + "스트라이크");
             return;
         }
 
-        if (strike != 0) {
-            System.out.println(strike + "스트라이크");
+        if (counter.strikeCounted()) {
+            System.out.println(counter.getStrike() + "스트라이크");
             return;
         }
 
-        if (ball != 0) {
-            System.out.println(ball + "볼");
+        if (counter.ballCounted()) {
+            System.out.println(counter.getBall() + "볼");
             return;
         }
         System.out.println("낫싱");

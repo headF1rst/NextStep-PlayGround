@@ -1,13 +1,18 @@
-package step3;
+package step3.baseballGame;
 
-import java.util.HashSet;
 import java.util.Set;
 
 public class OppositePlayer {
 
-    private final Set<Integer> numbers = new HashSet();
-    private final Umpire umpire = new Umpire();
-    private final RandomGenerator randomGenerator = new RandomGenerator();
+    private final Set<Integer> numbers;
+    private final Umpire umpire;
+    private final RandomGenerator randomGenerator;
+
+    public OppositePlayer(Set<Integer> numbers, Umpire umpire, RandomGenerator randomGenerator) {
+        this.numbers = numbers;
+        this.umpire = umpire;
+        this.randomGenerator = randomGenerator;
+    }
 
     public void pickNumbers() {
         int randomInteger = randomGenerator.getRandomInteger();

@@ -1,6 +1,6 @@
-package step3.view;
+package step3.baseballGame.view;
 
-import step3.Counter;
+import step3.baseballGame.Counter;
 
 public class ResultView {
 

@@ -1,4 +1,4 @@
-package step3.view;
+package step3.baseballGame.view;
 
 import java.util.Arrays;
 import java.util.List;

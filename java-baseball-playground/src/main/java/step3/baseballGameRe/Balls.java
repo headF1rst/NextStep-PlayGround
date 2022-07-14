@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 
 public class Balls {
 
+    private static final int NECESSARY_BALL_NUMBER_COUNT = 3;
     private final List<Ball> balls;
     private Balls(List<Ball> balls) {
         this.balls = balls;
@@ -25,6 +26,6 @@ public class Balls {
     }
 
     private static boolean pickedThreeBalls(Set<Integer> randomNumbers) {
-        return randomNumbers.size() == 3;
+        return randomNumbers.size() == NECESSARY_BALL_NUMBER_COUNT;
     }
 }

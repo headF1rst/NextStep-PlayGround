@@ -1,4 +1,4 @@
-package step3.baseballGameRe;
+package step3.baseballGame;
 
 import java.util.HashMap;
 import java.util.Map;

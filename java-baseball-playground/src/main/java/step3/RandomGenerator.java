@@ -1,4 +1,4 @@
-package step3.baseballGame;
+package step3;
 
 import java.util.Random;
 

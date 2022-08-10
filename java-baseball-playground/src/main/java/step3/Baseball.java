@@ -1,21 +1,21 @@
-package step3.baseballGame;
+package step3;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Ball {
+public class Baseball {
 
     private static final int MIN_NUMBER = 1;
     private static final int MAX_NUMBER = 9;
-    private static final Map<Integer, Ball> CACHE = new HashMap<>();
+    private static final Map<Integer, Baseball> CACHE = new HashMap<>();
     private final int number;
 
-    private Ball(int number) {
+    private Baseball(int number) {
         this.number = number;
     }
-    public static Ball valueOf(int number) {
+    public static Baseball valueOf(int number) {
         validateBallNumberRange(number);
-        return CACHE.computeIfAbsent(number, Ball::new);
+        return CACHE.computeIfAbsent(number, Baseball::new);
     }
 
     private static void validateBallNumberRange(int number) {
